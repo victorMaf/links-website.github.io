@@ -10,10 +10,33 @@
   position: absolute;
   top: 0px;
   left: 0;
-  width: 500px;
+  width: 550px;
   height: 20px;
   border: 3px solid black;
 }
+    
+          .blink {
+      animation: blinker 0.6s linear infinite;
+      color: #1c87c9;
+      font-size: 30px;
+      font-weight: bold;
+      font-family: sans-serif;
+      }
+      @keyframes blinker {  
+      50% { opacity: 0; }
+      }
+      .blink-one {
+      animation: blinker-one 1s linear infinite;
+      }
+      @keyframes blinker-one {  
+      0% { opacity: 0; }
+      }
+      .blink-two {
+      animation: blinker-two 1.4s linear infinite;
+      }
+      @keyframes blinker-two {  
+      100% { opacity: 0; }
+      }
   
   </style>
   
@@ -52,7 +75,7 @@
   
 <div class="container">
 
-  <center><div class="absolute" style="background-color:black;text-align:center;border:1px solid white"><font size="4" color="red"><b>Reclama se va inchide in 5 secunde        Aici poate fi reclama ta </b></font></div></center>
+  <center><div class="absolute" style="background-color:black;text-align:center;border:1px solid white"><font class="blink" size="4" color="red"><b>Reclama se va inchide in 5 secunde        Aici poate fi reclama ta </b></font></div></center>
 
     <iframe id="preview-frame" src="https://www.clicksud.org/" name="preview-frame" frameborder="0" noresize="noresize" style="height: 902px;">
     </iframe>
