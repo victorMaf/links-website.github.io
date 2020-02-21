@@ -74,7 +74,7 @@
   
 <div class="container">
 
-  <center><div class="absolute" style="background-color:black;text-align:center;border:1px solid white"><font size="4" color="red"><b>Reclama se va inchide in 5 secunde</b></font> <font class="blink" size="4" color="red"><b> &nbsp;&nbsp; Aici poate fi reclama ta </b></font></div></center>
+  <center><div class="absolute" style="background-color:black;text-align:center;border:1px solid white"><font size="4" color="red"><b>Reclama se va inchide in 5 secunde</b></font> <font class="blink" size="4" color="red"><b> &nbsp;&nbsp; Aici poate fi reclama ta </b></font><div id="countdown">5</div></div></center>
 
     <iframe id="preview-frame" src="https://www.clicksud.org/" name="preview-frame" frameborder="0" noresize="noresize" style="height: 902px;">
     </iframe>
@@ -82,6 +82,26 @@
 </div>
 
 <script>
+    var seconds;
+  var temp;
+ 
+  function countdown() {
+    seconds = document.getElementById('countdown').innerHTML;
+    seconds = parseInt(seconds, 10);
+ 
+    if (seconds == 1) {
+      temp = document.getElementById('countdown');
+      temp.innerHTML = "all done, bye bye";
+      return;
+    }
+ 
+    seconds--;
+    temp = document.getElementById('countdown');
+    temp.innerHTML = seconds;
+    timeoutMyOswego = setTimeout(countdown, 1000);
+  } 
+ 
+  countdown();
 </script>
 
 </body>
