@@ -1,101 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+  <html lang="en">
 
-<head>
-  <title>5 secunde</title>
-  
-  <style>
+  <head>
+    <title>Reclama 5 secunde</title>
 
-  div.absolute {
-  position: absolute;
-  top: 0px;
-  left: 0;
-  width: 100%;
-  height: 64px;
-  border: 3px solid black;
-}
-    
-          .blink {
-      animation: blinker 0.6s linear infinite;
-      color: white;
-      font-weight: bold;
-      font-family: sans-serif;
-      }
-      @keyframes blinker {  
-      50% { opacity: 0; }
-      }
+    <style>
+
+      div.absolute {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 64px;
+        border: 3px solid black;}
+
+      .blink {
+        animation: blinker 0.6s linear infinite;
+        color: white;
+        font-weight: bold;
+        font-family: sans-serif;}
+
+       @keyframes blinker {  
+        50% { opacity: 0; }}
+
       .blink-one {
-      animation: blinker-one 1s linear infinite;
-      }
-      @keyframes blinker-one {  
-      0% { opacity: 0; }
-      }
+        animation: blinker-one 1s linear infinite;}
+
+       @keyframes blinker-one {  
+        0% { opacity: 0; }}
+
       .blink-two {
-      animation: blinker-two 1.4s linear infinite;
-      }
+        animation: blinker-two 1.4s linear infinite;}
+
       @keyframes blinker-two {  
-      100% { opacity: 0; }
-      }
-    
-    
-    .vertical-center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-  
-  </style>
-  
-      <meta http-equiv="Refresh" content="5;url=https://teatru--radiofonic.blogspot.com/p/o-mie-si-una-de-nopti-este-o-antologie.html">
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1.0">
-      <style>
-      html body {width: 100%;height: 100%;padding: 0px;margin: 0px;overflow: hidden;font-family: arial;font-size: 10px;color: #6e6e6e;background-color: #000;} #preview-frame {width: 100%;background-color: #fff;}</style>
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-      <script>
+        100% { opacity: 0; }}
+
+      .vertical-center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);}
+
+      html body {
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+        font-family: arial;
+        font-size: 10px;
+        color: #6e6e6e;
+        background-color: #000;} 
+
+      #preview-frame {
+        width: 100%;
+        background-color: #fff;}
+
+
+    </style>
+
+        <meta http-equiv="Refresh" content="5;url=https://teatru--radiofonic.blogspot.com/p/o-mie-si-una-de-nopti-este-o-antologie.html">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <center><div class="absolute" class="vertical-center" style="background-color:black;text-align:center;border:1px solid white">
+        <font size="4" color="white"><b>Reclama se va inchide in 5 secunde</b></font>
+        <font class="blink-one" size="4" color="white"><b> &nbsp;&nbsp; Aici poate fi reclama ta </b></font>
+      </div></center>
+
+        <iframe id="preview-frame" src="https://easyhits4u.net/120873/" name="preview-frame" frameborder="0" noresize="noresize" style="height: 902px;">
+        </iframe>
+
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+
          //function to fix height of iframe!
-         var calcHeight = function() {
-           //var headerDimensions = 0; //$('#header-bar').height();
-           $('#preview-frame').height($(window).height());
-         }
-         
-         $(document).ready(function() {
-           calcHeight();
-           /*$('#header-bar a.close').mouseover(function() {
-             $('#header-bar a.close').addClass('activated');
-           }).mouseout(function() {
-             $('#header-bar a.close').removeClass('activated');
-           });*/
-         }); 
-         
-         $(window).resize(function() {
-           calcHeight();
-         }).load(function() {
-           calcHeight();
-         });
-      </script>
-  
-</head>
+       var calcHeight = function() {
+         //var headerDimensions = 0; //$('#header-bar').height();
+         $('#preview-frame').height($(window).height());
+       }
 
-<body>
-  
-<div class="container">
+       $(document).ready(function() {
+         calcHeight();
+         /*$('#header-bar a.close').mouseover(function() {
+           $('#header-bar a.close').addClass('activated');
+         }).mouseout(function() {
+           $('#header-bar a.close').removeClass('activated');
+         });*/
+       }); 
 
-  <center><div class="absolute" class="vertical-center" style="background-color:black;text-align:center;border:1px solid white">
-    <font size="4" color="white"><b>Reclama se va inchide in 5 secunde</b></font>
-    <font class="blink-one" size="4" color="white"><b> &nbsp;&nbsp; Aici poate fi reclama ta </b></font>
-  </div></center>
+       $(window).resize(function() {
+         calcHeight();
+       }).load(function() {
+         calcHeight();
+       });
 
-    <iframe id="preview-frame" src="https://easyhits4u.net/120873/" name="preview-frame" frameborder="0" noresize="noresize" style="height: 902px;">
-    </iframe>
-  
-</div>
+    </script>
 
-<script>
-
-</script>
-
-</body>
+  </body>
 </html>
